@@ -10,6 +10,6 @@ public class HelloController {
 
     @GetMapping("/{nome}")
     public ResponseEntity<String> hello(@PathVariable String nome) {
-        return ResponseEntity.ok(String.format("Ola %s como vai?", nome));
+        return ResponseEntity.ok(String.format("Ola %s como vai? Posso ajudar?", nome));
     }
 }
